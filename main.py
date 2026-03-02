@@ -4,8 +4,9 @@ import datetime as dt
 import pandas
 import os
 
-MY_EMAIL="k.p.seemaprem@gmail.com"
-PASSWORD="dggcemrijfcjopti"
+MY_EMAIL= os.environ.get("MY_EMAIL")
+PASSWORD=os.environ.get("PASSWORD")
+
 now= dt.datetime.now()
 today=(now.month,now.day)
 
